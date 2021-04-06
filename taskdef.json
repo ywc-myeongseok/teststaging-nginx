@@ -1,0 +1,19 @@
+{
+    "executionRoleArn": "arn:aws:iam::921176085839:role/ecsTaskExecutionRole",
+    "containerDefinitions": [{
+      "name": "teststaging-nginx",
+      "image": "<Docker_Image>",
+      "essential": true,
+      "portMappings": [{
+        "hostPort": 0,
+        "protocol": "tcp",
+        "containerPort": 80
+      }]
+	}],
+    "requiresCompatibilities": [
+      "ec2"
+    ],
+    "networkMode": "bridge",
+    "family": "teststaging-nginx",
+    "memory": "128"
+}
