@@ -11,7 +11,7 @@
       }]
 	}],
     "requiresCompatibilities": [
-      "ec2"
+      "EC2"
     ],
     "networkMode": "bridge",
     "family": "teststaging-nginx",
